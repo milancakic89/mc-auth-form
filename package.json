@@ -1,10 +1,12 @@
 {
-  "name": "mc-auth-form",
+  "name": "cm-auth-form",
   "version": "0.0.0",
+  "description": "(C)akic (M)ilan - [Login, Signup, Forgot password, activate account] to build auth routes faster",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build cm-auth-form",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

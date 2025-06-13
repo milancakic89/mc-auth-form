@@ -1,14 +1,16 @@
 
-:host{
-        width: 100%;
-        max-width: 400px;
-}
+
 
 ::ng-deep {
     .link-wrapper [link] {
         text-decoration: none;
         color: inherit;
         font-weight: 500;
+    }
+
+    :host{
+        width: 100%;
+        max-width: 400px;
     }
 }
 

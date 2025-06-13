@@ -1,12 +1,13 @@
 import { Component, EventEmitter, inject, Output } from '@angular/core';
-import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { passwordValidator } from './validators/passwordValidator';
+import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+import { passwordValidator } from '../../validators/passwordValidator';
 
 @Component({
-  selector: 'cm-auth-form',
+  selector: 'cm-auth-form-login',
   templateUrl: './cm-auth-form.component.html',
+  imports: [ReactiveFormsModule],
   styleUrl: `./cm-auth-form.component.scss`,
-  standalone: false
+  standalone: true
 })
 export class CmAuthFormComponent {
   private fb = inject(FormBuilder);
