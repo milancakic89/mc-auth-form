@@ -1,0 +1,68 @@
+
+:host{
+        width: 100%;
+        max-width: 400px;
+}
+
+::ng-deep {
+    .link-wrapper [link] {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+}
+
+form {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    input {
+        padding: .5rem;
+        margin: 0.1rem 0rem 0.6rem;
+        border-radius: 5px;
+        border: 1px solid gray;
+        outline: none;
+
+        &:last-of-type {
+            margin-bottom: 1.2rem;
+        }
+
+    }
+
+    .link-wrapper {
+        margin-top: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+
+    }
+
+
+
+    button[type="submit"] {
+        background-color: rgb(6, 144, 6);
+        color: #fff;
+        padding: .4rem 1rem;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+
+
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            opacity: .8;
+        }
+
+        &:disabled {
+            background-color: gray;
+        }
+    }
+}
