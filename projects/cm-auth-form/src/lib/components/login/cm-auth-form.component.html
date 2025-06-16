@@ -3,7 +3,7 @@
     <label for="email">Email</label>
     <input id="email" name="email" formControlName="email" />
     <label for="password">Password</label>
-    <input id="password" name="password" type="password" formControlName="password" />
+    <input id="password" autocomplete="new-password" name="password" type="password" formControlName="password" />
     <button type="submit" [disabled]="!signinForm.valid">Sign in</button>
     <div class="link-wrapper">
         <ng-content select="[link]"></ng-content>
