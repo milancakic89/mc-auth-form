@@ -2,62 +2,34 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Instalation 
 
 ```bash
-ng generate --help
+npm i mc-auth-form
+
 ```
 
-## Building
+## Quick common auth forms
 
-To build the library, run:
+### Login form
 
-```bash
-ng build cm-auth-form
+Uses email and password with some default strength(1 number, 1 special char, 1 Uppercase, 1 lowercase)
+
+```html
+    <cm-auth-form-login (onFormSubmit)="onFormSubmit($event)">
+    <h2 heading>Sign in</h2>
+    <a link routerLink="signup">Sign up here</a>
+    </cm-auth-form-login>
 ```
 
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
+### Signup form
 
-### Publishing the Library
+Uses email and password with repeat password (same validation with password being same as repeat password as addition)
 
-Once the project is built, you can publish your library by following these steps:
-
-1. Navigate to the `dist` directory:
-   ```bash
-   cd dist/cm-auth-form
-   ```
-
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+```html
+     <cm-auth-form-signup (onFormSubmit)="onFormSubmit($event)">
+    <h2 heading>Sign up</h2>
+    <a link routerLink="/">Sign in here</a>
+    </cm-auth-form-signup>
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
