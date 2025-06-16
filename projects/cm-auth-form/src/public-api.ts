@@ -5,4 +5,3 @@
 export * from './lib/components/login/cm-auth-form.component';
 export * from './lib/components/signup/signup.component';
 export * from './lib/components/forgot-password/forgot-password.component';
-export * from './lib/components/activate-account/activate-account.component';

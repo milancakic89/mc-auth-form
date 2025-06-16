@@ -1,6 +1,6 @@
 {
-  "name": "mc-auth-form",
-  "version": "0.0.2",
+  "name": "mc-auth-frm",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"

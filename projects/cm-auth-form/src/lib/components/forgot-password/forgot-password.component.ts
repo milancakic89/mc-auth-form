@@ -1,11 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
+import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'lib-forgot-password',
-  imports: [],
+  selector: 'cm-auth-form-forgot-password',
+  imports: [ReactiveFormsModule],
   templateUrl: './forgot-password.component.html',
-  styleUrl: './forgot-password.component.css'
+  styleUrl: './forgot-password.component.scss'
 })
 export class ForgotPasswordComponent {
+ private fb = inject(FormBuilder);
 
+  @Output() onFormSubmit = new EventEmitter();
+
+  resetForm = this.fb.group({
+    email: new FormControl('', {
+      validators: [Validators.email, Validators.required],
+      updateOn: 'blur',
+    })
+  });
+
+  onSignIn(){
+    const { value } = this.resetForm;
+    this.onFormSubmit.emit(value);
+  }
 }

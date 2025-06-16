@@ -24,7 +24,6 @@ export class CmAuthFormComponent {
 
   onSignIn(){
     const { value } = this.signinForm;
-    console.log(value)
     this.onFormSubmit.emit(value);
   }
 }
