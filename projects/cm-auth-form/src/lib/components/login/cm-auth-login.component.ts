@@ -4,12 +4,12 @@ import { passwordValidator } from '../../validators/passwordValidator';
 
 @Component({
   selector: 'cm-auth-form-login',
-  templateUrl: './cm-auth-form.component.html',
+  templateUrl: './cm-auth-login.component.html',
   imports: [ReactiveFormsModule],
-  styleUrl: `./cm-auth-form.component.scss`,
+  styleUrl: `./cm-auth-login.component.scss`,
   standalone: true
 })
-export class CmAuthFormComponent {
+export class CmAuthLoginComponent {
   private fb = inject(FormBuilder);
 
   @Output() onFormSubmit = new EventEmitter();

@@ -4,10 +4,10 @@ import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angu
 @Component({
   selector: 'cm-auth-form-forgot-password',
   imports: [ReactiveFormsModule],
-  templateUrl: './forgot-password.component.html',
-  styleUrl: './forgot-password.component.scss'
+  templateUrl: './cm-auth-forgot-password.component.html',
+  styleUrl: './cm-auth-forgot-password.component.scss'
 })
-export class ForgotPasswordComponent {
+export class CmAuthForgotPasswordComponent {
  private fb = inject(FormBuilder);
 
   @Output() onFormSubmit = new EventEmitter();
