@@ -1,6 +1,6 @@
 {
   "name": "cm-auth-form",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "description": "(C)akic (M)ilan - [Login, Signup, Forgot password, activate account] to build auth routes faster",
   "scripts": {
     "ng": "ng",
